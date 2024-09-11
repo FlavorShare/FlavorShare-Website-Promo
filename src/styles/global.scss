@@ -1,0 +1,84 @@
+@use 'colors';
+
+html, body {
+    text-align: center;
+    position:relative;
+    top:0%;
+    left:0%;
+    height:100%;
+    width:100%; 
+    background-color: colors.$blue;
+    color: colors.$white;
+}
+
+.circle-green-top-left {
+    position: absolute;
+    z-index: 0;
+    top: -60vw;
+    left: -45vw;
+    width: 90vw;
+    height: 90vw;
+    background: radial-gradient(circle, colors.$green, transparent 40%);
+    border-radius: 50%;
+}
+
+.circle-green-mid-right {
+    position: absolute;
+    top: -60vw;
+    right: -75vw;
+    width: 150vw;
+    height: 150vw;
+    background: radial-gradient(circle, colors.$green, transparent 40%);
+    border-radius: 50%;
+    z-index: 2;
+}
+.circle-green-bot-left {
+    position: absolute;
+    bottom: -100vw;
+    left: -80vw;
+    width: 210vw;
+    height: 210vw;
+    background: radial-gradient(circle, colors.$green, transparent 60%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle-red-top {
+    position: absolute;
+    top: -145vw;
+    right: -68vw;
+    width: 210vw;
+    height: 210vw;
+    background: radial-gradient(circle, colors.$red -35%, transparent 60%);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.circle-red-bot-right {
+    position: absolute;
+    bottom: -50vw;
+    right: -25vw;
+    width: 110vw;
+    height: 110vw;
+    background: radial-gradient(circle, colors.$red -35%, transparent 60%);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.circle-blue-mid-left {
+    position: absolute;
+    top: -60vw;
+    left: -50vw;
+    width: 120vw;
+    height: 120vw;
+    background: radial-gradient(circle, colors.$blue -50%, transparent 40%);
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.text {
+    position: relative;
+    margin: 30vh;
+    z-index: 10; // Ensure text is on top of circles
+    color: colors.$white; // Ensure text color is white
+}

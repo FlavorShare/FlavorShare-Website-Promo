@@ -1,16 +1,20 @@
 ---
-
+import BaseLayout from "../Layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+	
+	<div class="circle-red-top"></div>
+	<div class="circle-green-top-left"></div>
+	<div class="circle-blue-mid-left"></div>
+	<div class="circle-green-bot-left"></div>
+	<div class="circle-red-bot-right"></div>
+	<div class="circle-green-mid-right"></div>
+
+	<div class="text">
+		<h2>FlavorShare</h2>
+		<h1>Coming Soon</h1>
+		<p>In the meantime, follow us on our social media to stay up to date.</p>
+	</div>
+  	
+</BaseLayout>
