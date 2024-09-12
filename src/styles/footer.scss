@@ -1,0 +1,41 @@
+@use 'colors';
+
+.footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: colors.$white;
+}
+
+.social-icons {
+    margin: 10px 0; 
+    position: relative;
+    z-index: 10;
+}
+
+.icon-link {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    fill: colors.$white;
+}
+
+.icon:hover {
+    fill: colors.$white;
+    transition: ease-in-out 0.3s;
+    transform: scale(1.1);
+}
+
+.footer-credit {
+    font-size: 0.8rem;
+    color: colors.$white;
+    position: relative;
+    z-index: 10;
+}
