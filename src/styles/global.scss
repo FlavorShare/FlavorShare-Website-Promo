@@ -1,14 +1,19 @@
 @use 'colors';
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     position:relative;
     top:0%;
     left:0%;
-    height:100%;
-    width:100%; 
+    height:100vh;
     background-color: colors.$blue;
     color: colors.$white;
+    overflow: hidden;
 }
 
 .circle-green-top-left {
@@ -20,6 +25,28 @@ html, body {
     height: 90vw;
     background: radial-gradient(circle, colors.$green, transparent 40%);
     border-radius: 50%;
+    animation: circle-green-top-left 5s infinite;
+}
+
+@keyframes circle-green-top-left {
+    0% {
+        top: -60vw;
+        left: -45vw;
+        width: 90vw;
+        height: 90vw;
+    }
+    60% {
+        top: -60vw;
+        left: -55vw;
+        width: 110vw;
+        height: 110vw;
+    }
+    100% {
+        top: -60vw;
+        left: -45vw;
+        width: 90vw;
+        height: 90vw;
+    }
 }
 
 .circle-green-mid-right {
@@ -28,10 +55,34 @@ html, body {
     right: -75vw;
     width: 150vw;
     height: 150vw;
-    background: radial-gradient(circle, colors.$green, transparent 40%);
+    background: radial-gradient(circle, colors.$green -30%, transparent 60%);
     border-radius: 50%;
     z-index: 2;
+    animation: circle-green-mid-right 6s infinite;
 }
+
+
+@keyframes circle-green-mid-right {
+    0% {
+        top: -60vw;
+        right: -75vw;
+        width: 140vw;
+        height: 140vw;
+    }
+    50% {
+        top: -50vw;
+        right: -60vw;
+        width: 110vw;
+        height: 110vw;
+    }
+    100% {
+        top: -60vw;
+        right: -75vw;
+        width: 140vw;
+        height: 140vw;
+    }
+}
+
 .circle-green-bot-left {
     position: absolute;
     bottom: -100vw;
@@ -41,17 +92,61 @@ html, body {
     background: radial-gradient(circle, colors.$green, transparent 60%);
     border-radius: 50%;
     z-index: 1;
+    animation: circle-green-bot-left 4s infinite;
+}
+
+@keyframes circle-green-bot-left {
+    0% {
+        bottom: -100vw;
+        left: -80vw;
+        width: 210vw;
+        height: 210vw;
+    }
+    50% {
+        bottom: -100vw;
+        left: -80vw;
+        width: 190vw;
+        height: 190vw;
+    }
+    100% {
+        bottom: -100vw;
+        left: -80vw;
+        width: 210vw;
+        height: 210vw;
+    }
 }
 
 .circle-red-top {
     position: absolute;
     top: -145vw;
-    right: -68vw;
+    right: -70vw;
     width: 210vw;
     height: 210vw;
     background: radial-gradient(circle, colors.$red -35%, transparent 60%);
     border-radius: 50%;
     z-index: 2;
+    animation: circle-red-top 7s infinite;
+}
+
+@keyframes circle-red-top {
+    0% {
+        top: -145vw;
+        right: -70vw;
+        width: 210vw;
+        height: 210vw;
+    }
+    50% {
+        top: -145vw;
+        right: -58vw;
+        width: 220vw;
+        height: 220vw;
+    }
+    100% {
+        top: -145vw;
+        right: -70vw;
+        width: 210vw;
+        height: 210vw;
+    }
 }
 
 .circle-red-bot-right {
@@ -60,9 +155,31 @@ html, body {
     right: -25vw;
     width: 110vw;
     height: 110vw;
-    background: radial-gradient(circle, colors.$red -35%, transparent 60%);
+    background: radial-gradient(circle, colors.$red -35%, transparent 70%);
     border-radius: 50%;
     z-index: 2;
+    animation: circle-red-bot-right 10s infinite;
+}
+
+@keyframes circle-red-bot-right {
+    0% {
+        bottom: -50vw;
+        right: -25vw;
+        width: 110vw;
+        height: 110vw;
+    }
+    50% {
+        bottom: -100vw;
+        right: -105vw;
+        width: 220vw;
+        height: 220vw;
+    }
+    100% {
+        bottom: -50vw;
+        right: -25vw;
+        width: 110vw;
+        height: 110vw;
+    }
 }
 
 .circle-blue-mid-left {
@@ -73,12 +190,83 @@ html, body {
     height: 120vw;
     background: radial-gradient(circle, colors.$blue -50%, transparent 40%);
     border-radius: 50%;
-    z-index: 3;
+    z-index: 3;animation: circle-blue-mid-left 10s infinite;
+}
+
+@keyframes circle-blue-mid-left {
+    0% {
+        top: -60vw;
+        left: -50vw;
+        width: 120vw;
+        height: 120vw;
+    }
+    50% {
+        top: -50vw;
+        left: -20vw;
+        width: 110vw;
+        height: 110vw;
+    }
+    100% {
+        top: -60vw;
+        left: -50vw;
+        width: 120vw;
+        height: 120vw;
+    }
 }
 
 .text {
     position: relative;
-    margin: 30vh;
+    margin: 30vh 5vw;
     z-index: 10; // Ensure text is on top of circles
     color: colors.$white; // Ensure text color is white
 }
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px;
+    z-index: 9999;
+  }
+
+  .logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .app-store {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 75px;
+    right: 10px;
+    z-index: 10;
+  }

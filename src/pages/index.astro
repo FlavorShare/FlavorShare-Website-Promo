@@ -3,18 +3,49 @@ import BaseLayout from "../Layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-	
-	<div class="circle-red-top"></div>
-	<div class="circle-green-top-left"></div>
-	<div class="circle-blue-mid-left"></div>
-	<div class="circle-green-bot-left"></div>
-	<div class="circle-red-bot-right"></div>
-	<div class="circle-green-mid-right"></div>
+  <div class='circle-red-top'></div>
+  <div class='circle-green-top-left'></div>
+  <div class='circle-blue-mid-left'></div>
+  <div class='circle-green-bot-left'></div>
+  <div class='circle-red-bot-right'></div>
+  <div class='circle-green-mid-right'></div>
+  <img src='src/images/appStore.png' alt='App Store Logo' class='app-store' />
 
-	<div class="text">
-		<h2>FlavorShare</h2>
-		<h1>Coming Soon</h1>
-		<p>In the meantime, follow us on our social media to stay up to date.</p>
-	</div>
-  	
+  <div class='text'>
+    <h2>FlavorShare</h2>
+    <h1>Coming Soon</h1>
+    <p>In the meantime, follow us on our social media to stay up to date.</p>
+    <div class='email-container'>
+      <input
+        type='email'
+        placeholder='Enter your email address'
+        class='email-input'
+      />
+      <button class='subscribe-button'>Subscribe</button>
+    </div>
+    <div class='social-media'>
+      <a
+        href='https://www.instagram.com/flavorshareapp/'
+        target='_blank'
+        class='social-media-link'
+      >
+        <img
+          src='src/images/instagram.png'
+          alt='Instagram'
+          class='social-media-icon'
+        />
+      </a>
+      <a
+        href='https://www.twitter.com/flavorshareapp'
+        target='_blank'
+        class='social-media-link'
+      >
+        <img
+          src='src/images/twitter.png'
+          alt='Twitter'
+          class='social-media-icon'
+        />
+      </a>
+    </div>
+  </div>
 </BaseLayout>
