@@ -164,6 +164,17 @@ p {
 //     background-color: darken(colors.$green, 10%);
 // }
 
+// Smartphone Styles
+@media (max-width: 768px) {
+    .app {
+        top: 15vh
+    }
+
+    .text {
+        margin-top: 25vh;
+    }
+}
+
 // BACKGROUND CIRCLES
 .circle-green-top-left {
     position: absolute;
