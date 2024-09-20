@@ -21,14 +21,10 @@ html {
   top: 0;
   left: 0;
   height: 100vh;
-  background-color: colors.$white;
+  background-color: colors.$blue;
   color: colors.$white;
   overflow: hidden;
   user-select: none;
-}
-
-body {
-  background-color: colors.$blue;
 }
 
 // Heading Styles
