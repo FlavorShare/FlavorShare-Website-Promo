@@ -1,11 +1,10 @@
-@use 'colors';
+@use "colors";
 
 // Import Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 // Variables
-$font-family: "Montserrat",
-sans-serif;
+$font-family: "Montserrat", sans-serif;
 $text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 $h1-size: 5.5vh;
 $h2-size: 3.5vh;
@@ -13,20 +12,19 @@ $h3-size: 2.5vh;
 $p-size: 1.8vh;
 
 // Global Styles
-html,
-body {
-    margin: 0;
-    padding: 0;
-    font-family: $font-family;
-    text-align: center;
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    background-color: colors.$blue;
-    color: colors.$white;
-    overflow: hidden;
-    user-select: none;
+html {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: colors.$blue;
+  color: colors.$white;
+  overflow: hidden;
+  user-select: none;
 }
 
 // Heading Styles
@@ -34,104 +32,104 @@ h1,
 h2,
 h3,
 p {
-    margin: 0;
-    padding: 0;
-    text-shadow: $text-shadow;
+  margin: 0;
+  padding: 0;
+  text-shadow: $text-shadow;
 }
 
 h1 {
-    font-size: $h1-size;
-    font-weight: 900;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Override for h1
+  font-size: $h1-size;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Override for h1
 }
 
 h2 {
-    font-size: $h2-size;
-    font-weight: 700;
+  font-size: $h2-size;
+  font-weight: 700;
 }
 
 h3 {
-    font-size: $h3-size;
-    font-weight: 500;
-    margin: 2vh 0;
+  font-size: $h3-size;
+  font-weight: 500;
+  margin: 2vh 0;
 }
 
 p {
-    font-size: $p-size;
-    font-weight: 400;
+  font-size: $p-size;
+  font-weight: 400;
 }
 
 // Text Container
 .text {
-    position: relative;
-    margin: 30vh 5vw;
-    z-index: 10;
-    color: colors.$white;
+  position: relative;
+  margin: 30vh 5vw;
+  z-index: 10;
+  color: colors.$white;
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 9999;
-    height: 7vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 9999;
+  height: 7vh;
 }
 
 .logo {
-    position: absolute;
-    top: 1vh;
-    left: 1vw;
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
 }
 
 .logo img {
-    width: 5vh;
-    height: 5vh;
+  width: 5vh;
+  height: 5vh;
 }
 
 .app {
-    width: 15vh;
-    height: 15vh;
-    top: 20vh;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    left: 50vw;
-    transform: translateX(-55%);
-    z-index: 9;
+  width: 15vh;
+  height: 15vh;
+  top: 20vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50vw;
+  transform: translateX(-55%);
+  z-index: 9;
 }
 
 .app-store {
-    position: absolute;
-    width: 5vh;
-    height: 5vh;
-    bottom: -1.5vh;
-    right: -1.5vh;
-    z-index: 10;
-    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+  position: absolute;
+  width: 5vh;
+  height: 5vh;
+  bottom: -1.5vh;
+  right: -1.5vh;
+  z-index: 10;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
 .app-icon {
-    width: 15vh;
-    height: 15vh;
-    position: relative;
-    border-radius: 3vh;
-    border: 2px solid colors.$white;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 9;
+  width: 15vh;
+  height: 15vh;
+  position: relative;
+  border-radius: 3vh;
+  border: 2px solid colors.$white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 9;
 }
 
 .nav-social {
-    display: absolute;
-    margin: 0;
-    padding: 0;
-    top: 10vh;
-    left: 3vw;
+  display: absolute;
+  margin: 0;
+  padding: 0;
+  top: 10vh;
+  left: 3vw;
 }
 
 // .email-container {
@@ -166,227 +164,227 @@ p {
 
 // Smartphone Styles
 @media (max-width: 768px) {
-    .app {
-        top: 15vh
-    }
+  .app {
+    top: 15vh;
+  }
 
-    .text {
-        margin-top: 25vh;
-    }
+  .text {
+    margin-top: 25vh;
+  }
 
-    .footer {
-        bottom: 15vh;
-    }
+  .footer {
+    bottom: 15vh;
+  }
 }
 
 // BACKGROUND CIRCLES
 .circle-green-top-left {
-    position: absolute;
-    z-index: 0;
-    top: -60vw;
-    left: -45vw;
-    width: 90vw;
-    height: 90vw;
-    background: radial-gradient(circle, colors.$green, transparent 40%);
-    border-radius: 50%;
-    animation: circle-green-top-left 5s infinite;
+  position: absolute;
+  z-index: 0;
+  top: -60vw;
+  left: -45vw;
+  width: 90vw;
+  height: 90vw;
+  background: radial-gradient(circle, colors.$green, transparent 40%);
+  border-radius: 50%;
+  animation: circle-green-top-left 5s infinite;
 }
 
 .circle-green-mid-right {
-    position: absolute;
-    top: -60vw;
-    right: -75vw;
-    width: 150vw;
-    height: 150vw;
-    background: radial-gradient(circle, colors.$green -30%, transparent 60%);
-    border-radius: 50%;
-    z-index: 2;
-    animation: circle-green-mid-right 6s infinite;
+  position: absolute;
+  top: -60vw;
+  right: -75vw;
+  width: 150vw;
+  height: 150vw;
+  background: radial-gradient(circle, colors.$green -30%, transparent 60%);
+  border-radius: 50%;
+  z-index: 2;
+  animation: circle-green-mid-right 6s infinite;
 }
 
 .circle-green-bot-left {
-    position: absolute;
-    bottom: -100vw;
-    left: -80vw;
-    width: 210vw;
-    height: 210vw;
-    background: radial-gradient(circle, colors.$green, transparent 60%);
-    border-radius: 50%;
-    z-index: 1;
-    animation: circle-green-bot-left 4s infinite;
+  position: absolute;
+  bottom: -100vw;
+  left: -80vw;
+  width: 210vw;
+  height: 210vw;
+  background: radial-gradient(circle, colors.$green, transparent 60%);
+  border-radius: 50%;
+  z-index: 1;
+  animation: circle-green-bot-left 4s infinite;
 }
 
 .circle-red-top {
-    position: absolute;
-    top: -145vw;
-    right: -70vw;
-    width: 210vw;
-    height: 210vw;
-    background: radial-gradient(circle, colors.$red -35%, transparent 60%);
-    border-radius: 50%;
-    z-index: 2;
-    animation: circle-red-top 7s infinite;
+  position: absolute;
+  top: -145vw;
+  right: -70vw;
+  width: 210vw;
+  height: 210vw;
+  background: radial-gradient(circle, colors.$red -35%, transparent 60%);
+  border-radius: 50%;
+  z-index: 2;
+  animation: circle-red-top 7s infinite;
 }
 
 .circle-red-bot-right {
-    position: absolute;
-    bottom: -50vw;
-    right: -25vw;
-    width: 110vw;
-    height: 110vw;
-    background: radial-gradient(circle, colors.$red -35%, transparent 70%);
-    border-radius: 50%;
-    z-index: 2;
-    animation: circle-red-bot-right 10s infinite;
+  position: absolute;
+  bottom: -50vw;
+  right: -25vw;
+  width: 110vw;
+  height: 110vw;
+  background: radial-gradient(circle, colors.$red -35%, transparent 70%);
+  border-radius: 50%;
+  z-index: 2;
+  animation: circle-red-bot-right 10s infinite;
 }
 
 .circle-blue-mid-left {
-    position: absolute;
-    top: -60vw;
-    left: -50vw;
-    width: 120vw;
-    height: 120vw;
-    background: radial-gradient(circle, colors.$blue -50%, transparent 40%);
-    border-radius: 50%;
-    z-index: 3;
-    animation: circle-blue-mid-left 10s infinite;
+  position: absolute;
+  top: -60vw;
+  left: -50vw;
+  width: 120vw;
+  height: 120vw;
+  background: radial-gradient(circle, colors.$blue -50%, transparent 40%);
+  border-radius: 50%;
+  z-index: 3;
+  animation: circle-blue-mid-left 10s infinite;
 }
 
 // BACKGROUN ANIMATIONS
 @keyframes circle-green-top-left {
-    0% {
-        top: -60vw;
-        left: -45vw;
-        width: 90vw;
-        height: 90vw;
-    }
+  0% {
+    top: -60vw;
+    left: -45vw;
+    width: 90vw;
+    height: 90vw;
+  }
 
-    60% {
-        top: -60vw;
-        left: -55vw;
-        width: 110vw;
-        height: 110vw;
-    }
+  60% {
+    top: -60vw;
+    left: -55vw;
+    width: 110vw;
+    height: 110vw;
+  }
 
-    100% {
-        top: -60vw;
-        left: -45vw;
-        width: 90vw;
-        height: 90vw;
-    }
+  100% {
+    top: -60vw;
+    left: -45vw;
+    width: 90vw;
+    height: 90vw;
+  }
 }
 
 @keyframes circle-green-mid-right {
-    0% {
-        top: -60vw;
-        right: -75vw;
-        width: 140vw;
-        height: 140vw;
-    }
+  0% {
+    top: -60vw;
+    right: -75vw;
+    width: 140vw;
+    height: 140vw;
+  }
 
-    50% {
-        top: -50vw;
-        right: -60vw;
-        width: 110vw;
-        height: 110vw;
-    }
+  50% {
+    top: -50vw;
+    right: -60vw;
+    width: 110vw;
+    height: 110vw;
+  }
 
-    100% {
-        top: -60vw;
-        right: -75vw;
-        width: 140vw;
-        height: 140vw;
-    }
+  100% {
+    top: -60vw;
+    right: -75vw;
+    width: 140vw;
+    height: 140vw;
+  }
 }
 
 @keyframes circle-green-bot-left {
-    0% {
-        bottom: -100vw;
-        left: -80vw;
-        width: 210vw;
-        height: 210vw;
-    }
+  0% {
+    bottom: -100vw;
+    left: -80vw;
+    width: 210vw;
+    height: 210vw;
+  }
 
-    50% {
-        bottom: -100vw;
-        left: -80vw;
-        width: 190vw;
-        height: 190vw;
-    }
+  50% {
+    bottom: -100vw;
+    left: -80vw;
+    width: 190vw;
+    height: 190vw;
+  }
 
-    100% {
-        bottom: -100vw;
-        left: -80vw;
-        width: 210vw;
-        height: 210vw;
-    }
+  100% {
+    bottom: -100vw;
+    left: -80vw;
+    width: 210vw;
+    height: 210vw;
+  }
 }
 
 @keyframes circle-red-bot-right {
-    0% {
-        bottom: -50vw;
-        right: -25vw;
-        width: 110vw;
-        height: 110vw;
-    }
+  0% {
+    bottom: -50vw;
+    right: -25vw;
+    width: 110vw;
+    height: 110vw;
+  }
 
-    50% {
-        bottom: -100vw;
-        right: -105vw;
-        width: 220vw;
-        height: 220vw;
-    }
+  50% {
+    bottom: -100vw;
+    right: -105vw;
+    width: 220vw;
+    height: 220vw;
+  }
 
-    100% {
-        bottom: -50vw;
-        right: -25vw;
-        width: 110vw;
-        height: 110vw;
-    }
+  100% {
+    bottom: -50vw;
+    right: -25vw;
+    width: 110vw;
+    height: 110vw;
+  }
 }
 
 @keyframes circle-red-top {
-    0% {
-        top: -145vw;
-        right: -70vw;
-        width: 210vw;
-        height: 210vw;
-    }
+  0% {
+    top: -145vw;
+    right: -70vw;
+    width: 210vw;
+    height: 210vw;
+  }
 
-    50% {
-        top: -145vw;
-        right: -58vw;
-        width: 220vw;
-        height: 220vw;
-    }
+  50% {
+    top: -145vw;
+    right: -58vw;
+    width: 220vw;
+    height: 220vw;
+  }
 
-    100% {
-        top: -145vw;
-        right: -70vw;
-        width: 210vw;
-        height: 210vw;
-    }
+  100% {
+    top: -145vw;
+    right: -70vw;
+    width: 210vw;
+    height: 210vw;
+  }
 }
 
 @keyframes circle-blue-mid-left {
-    0% {
-        top: -60vw;
-        left: -50vw;
-        width: 120vw;
-        height: 120vw;
-    }
+  0% {
+    top: -60vw;
+    left: -50vw;
+    width: 120vw;
+    height: 120vw;
+  }
 
-    50% {
-        top: -50vw;
-        left: -20vw;
-        width: 110vw;
-        height: 110vw;
-    }
+  50% {
+    top: -50vw;
+    left: -20vw;
+    width: 110vw;
+    height: 110vw;
+  }
 
-    100% {
-        top: -60vw;
-        left: -50vw;
-        width: 120vw;
-        height: 120vw;
-    }
+  100% {
+    top: -60vw;
+    left: -50vw;
+    width: 120vw;
+    height: 120vw;
+  }
 }
