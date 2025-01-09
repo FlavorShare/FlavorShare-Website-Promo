@@ -1,10 +1,13 @@
 ---
 import Socials from "./Socials.astro";
+import "../styles/navbar.scss";
 ---
 
 <nav class='navbar'>
   <div class='logo'>
-    <img src='/images/logo.png' alt='FlavorShare Logo' />
+    <a href='/'>
+      <img src='/images/logo.png' alt='FlavorShare Logo' />
+    </a>
   </div>
   <div class='nav-social'>
     <Socials />

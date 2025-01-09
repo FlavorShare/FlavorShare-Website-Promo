@@ -1,0 +1,206 @@
+@use "colors";
+
+// BACKGROUND CIRCLES
+.circle-green-top-left {
+  position: fixed;
+  z-index: 0;
+  top: -60vw;
+  left: -45vw;
+  width: 90vw;
+  height: 90vw;
+  background: radial-gradient(circle, colors.$green, transparent 40%);
+  border-radius: 50%;
+  animation: circle-green-top-left 10s infinite;
+}
+
+@keyframes circle-green-top-left {
+  0% {
+    transform: translate(10vw, 30vh) scale(1.5);
+  }
+
+  25% {
+    transform: translate(-5vw, 10vh) scale(1.3);
+  }
+
+  50% {
+    transform: translate(-15vw, -20vw) scale(1.2);
+  }
+
+  75% {
+    transform: translate(-5vw, -5vw) scale(1.4);
+  }
+
+  100% {
+    transform: translate(10vw, 30vh) scale(1.5);
+  }
+}
+
+.circle-green-mid-right {
+  position: fixed;
+  top: -60vw;
+  right: -75vw;
+  width: 150vw;
+  height: 150vw;
+  background: radial-gradient(circle, colors.$green -30%, transparent 60%);
+  border-radius: 50%;
+  z-index: 2;
+  animation: circle-green-mid-right 6s infinite;
+}
+
+@keyframes circle-green-mid-right {
+  0% {
+    transform: translate(10vw, 30vh) scale(1.5);
+  }
+
+  25% {
+    transform: translate(-5vw, 10vh) scale(1.3);
+  }
+
+  50% {
+    transform: translate(-15vw, -20vw) scale(1.2);
+  }
+
+  75% {
+    transform: translate(-5vw, -5vw) scale(1.4);
+  }
+
+  100% {
+    transform: translate(10vw, 30vh) scale(1.5);
+  }
+}
+
+.circle-green-bot-left {
+  position: fixed;
+  bottom: -100vw;
+  left: -80vw;
+  width: 210vw;
+  height: 210vw;
+  background: radial-gradient(circle, colors.$green, transparent 60%);
+  border-radius: 50%;
+  z-index: 1;
+  animation: circle-green-bot-left 20s infinite;
+}
+
+@keyframes circle-green-bot-left {
+  0% {
+    transform: translate(10vw, 30vh) scale(1.5);
+  }
+
+  25% {
+    transform: translate(-5vw, 10vh) scale(1.3);
+  }
+
+  50% {
+    transform: translate(-15vw, -20vw) scale(1.2);
+  }
+
+  75% {
+    transform: translate(-5vw, -5vw) scale(1.4);
+  }
+
+  100% {
+    transform: translate(10vw, 30vh) scale(1.5);
+  }
+}
+
+.circle-red-top {
+  position: fixed;
+  top: -145vw;
+  right: -70vw;
+  width: 210vw;
+  height: 210vw;
+  background: radial-gradient(circle, colors.$red -35%, transparent 60%);
+  border-radius: 50%;
+  z-index: 2;
+  animation: circle-red-top 7s infinite;
+}
+
+@keyframes circle-red-bot-right {
+  0% {
+    transform: translate(10vw, 30vh) scale(1.5);
+  }
+
+  25% {
+    transform: translate(-5vw, 10vh) scale(1.3);
+  }
+
+  50% {
+    transform: translate(-15vw, -20vw) scale(1.2);
+  }
+
+  75% {
+    transform: translate(-5vw, -5vw) scale(1.4);
+  }
+
+  100% {
+    transform: translate(10vw, 30vh) scale(1.5);
+  }
+}
+
+.circle-red-bot-right {
+  position: fixed;
+  bottom: -50vw;
+  right: -25vw;
+  width: 110vw;
+  height: 110vw;
+  background: radial-gradient(circle, colors.$red -35%, transparent 70%);
+  border-radius: 50%;
+  z-index: 2;
+  animation: circle-red-bot-right 10s infinite;
+}
+
+@keyframes circle-red-top {
+  0% {
+    transform: translate(20vw, -30vh) scale(1.5);
+  }
+
+  25% {
+    transform: translate(-5vw, 10vh) scale(1.3);
+  }
+
+  50% {
+    transform: translate(-15vw, -20vw) scale(1.2);
+  }
+
+  75% {
+    transform: translate(-5vw, -5vw) scale(1.4);
+  }
+
+  100% {
+    transform: translate(20vw, -30vh) scale(1.5);
+  }
+}
+
+.circle-blue-mid-left {
+  position: fixed;
+  top: -60vw;
+  left: -50vw;
+  width: 120vw;
+  height: 120vw;
+  background: radial-gradient(circle, colors.$blue -50%, transparent 40%);
+  border-radius: 50%;
+  z-index: 3;
+  animation: circle-blue-mid-left 10s infinite;
+}
+
+@keyframes circle-blue-mid-left {
+  0% {
+    transform: translate(30vw, -30vh) scale(1.5);
+  }
+
+  25% {
+    transform: translate(-5vw, 10vh) scale(1.3);
+  }
+
+  50% {
+    transform: translate(-15vw, -10vw) scale(1.2);
+  }
+
+  75% {
+    transform: translate(-5vw, -5vw) scale(1.4);
+  }
+
+  100% {
+    transform: translate(30vw, -30vh) scale(1.5);
+  }
+}

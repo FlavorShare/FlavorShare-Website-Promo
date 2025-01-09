@@ -1,0 +1,118 @@
+@use "colors";
+
+// Import Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+// Variables
+$font-family: "Montserrat", sans-serif;
+$text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+$h1-size: 5.5vh;
+$h2-size: 3.5vh;
+$h3-size: 2.5vh;
+$p-size: 1.8vh;
+
+// Global Styles
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: colors.$blue;
+  color: colors.$white;
+  user-select: none;
+}
+
+// Heading Styles
+h1,
+h2,
+h3,
+p,
+li {
+  margin: 0;
+  padding: 0;
+  text-shadow: $text-shadow;
+}
+
+h1 {
+  padding: 20px 0;
+  font-size: $h1-size;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Override for h1
+}
+
+h2 {
+  padding: 0 0 20px;
+  font-size: $h2-size;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: $h3-size;
+  font-weight: 500;
+  margin: 2vh 0;
+}
+
+p {
+  font-size: $p-size;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: colors.$white;
+}
+
+a.active {
+  text-decoration: none;
+  color: colors.$white;
+}
+
+a.active:hover {
+  color: colors.$white;
+}
+
+a.active:visited {
+  text-decoration: none;
+  color: colors.$white;
+}
+
+hr {
+  margin: 30px 0;
+}
+
+.text-contract {
+  position: relative;
+  margin: 10vh 5vw;
+  z-index: 10;
+  color: colors.$white;
+  text-align: left;
+}
+
+// Smartphone Styles
+@media (max-width: 768px) {
+  .app {
+    top: 15vh;
+  }
+
+  .text {
+    margin-top: 25vh;
+  }
+
+  .footer {
+    bottom: 15vh;
+  }
+}
+
+.footer {
+  text-align: center;
+  position: relative;
+  bottom: 5vh;
+  width: 100vw;
+  z-index: 10;
+  padding: 30px 0;
+}
